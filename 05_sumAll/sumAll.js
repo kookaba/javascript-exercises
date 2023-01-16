@@ -1,8 +1,16 @@
 const sumAll = function(first, last) {
     let sum = 0;
-    for (i=first; i<=last;i++) {
-        sum += i;
+    if (first > last) {
+        for (i=last; i<=first;i++) {
+            sum += i;
+        }
     }
+    else {
+        for (i=first; i<=last;i++) {
+            sum += i;
+        }
+    }
+
     return(sum);
 };
 
