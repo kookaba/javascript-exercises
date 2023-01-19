@@ -29,8 +29,15 @@ const power = function(a, b) {
 };
 
 const factorial = function(num) {
-	
-};
+  if (num === 0) {
+    return 1;
+  } else {
+    for (i = num - 1;i>0;i--) {
+      num *= i
+    }
+    return num;
+  }
+ };
 
 // Do not edit below this line
 module.exports = {
